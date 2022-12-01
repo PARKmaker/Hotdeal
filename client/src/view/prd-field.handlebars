@@ -1,0 +1,44 @@
+<div class="prd-box">
+  <a href={{href}}>
+    <img class="prd-img" src={{imgSrc}} alt="">
+    <div class="prd-container">
+      
+      <div class="prd-info">
+        <div class="prd-name">
+          <span>
+            {{prdName}}
+          </span>
+        </div>
+        
+        <div class="prd-Price">
+          <span class="prd-sale fs-20">
+            {{sale}}
+          </span>
+
+          <span class="price-detail">
+            {{#with regularPrice}}
+            <span class="prd-regularPrice">
+              {{regularPrice}}
+            </span>
+            <span class="prd-disPrice fs-20">
+              {{disPrice}}
+            </span>
+            {{/with}}
+          </span>
+        </div>
+
+      </div>
+      <div class="fs-16">
+        <span class="prd-puchaseNum">
+          {{puchaseNum}}
+        </span>
+        
+        <span class="prd-chgTime">
+          {{chgTime}}
+        </span>
+      </div>
+      
+    </div>
+  </a>
+  
+</div>

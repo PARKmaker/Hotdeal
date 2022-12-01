@@ -1,0 +1,16 @@
+main {
+  background-color: #DEE2E6;
+  margin-top: 10px;
+}
+
+.prd-list {
+  /* width: 1400px; */
+  margin : 0 auto;
+}
+
+.prd-list ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

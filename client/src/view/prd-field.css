@@ -1,0 +1,94 @@
+.prd-box{
+  width: 14rem;
+  height: auto;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px; */
+  transition: box-shadow 0.25s ease-in 0s, transform 0.25s ease-in 0s;
+  margin: 0.5rem;
+}
+
+.prd-box:hover{
+  transform: translateY(-8px);
+  box-shadow: rgb(0 0 0 / 50%) 0px 12px 20px 0px;
+}
+
+.prd-box a{
+  text-decoration: none;
+  letter-spacing:0;
+  color: black;
+}
+
+.prd-img{
+  max-width: 90%;
+  width: 100%;
+  /* width: 290px; */
+  height: 250px;
+  border-radius: 20px;
+  margin: 10px 10px 10px 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.prd-container{
+  padding: 10px 15px 5px;
+  line-height: 115%;
+}
+
+.prd-name{
+  letter-spacing: 1.8px;
+  line-height: 110%;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.prd-Price{
+  padding-top: 10px;
+  margin-bottom: 12px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.prd-Price .prd-sale{
+  font-size: 24px;
+  color: #ff0038;
+  letter-spacing:-2px;
+  margin-right: 5px
+}
+
+.prd-Price .price-detail{
+  display: inline-block;
+  position: relative;
+  min-width: 80px;
+}
+
+.prd-regularPrice{
+  position: absolute;
+  bottom: 20px;
+  color: #999;
+  text-decoration: line-through;
+  font: 12px/1.3 "Helvetica Neue",
+    "Apple SD Gothic Neo",
+    "맑은 고딕",
+    "Malgun Gothic",
+    "돋움",
+    dotum,
+    sans-serif;
+}
+
+.prd-puchaseNum{
+    color: #999;
+}
+
+.prd-chgTime{
+  margin-bottom: 5px;
+}
+
+.fs-16{
+  font-size: 16px;
+}
+
+.fs-20{
+  font-size: 20px;
+  font-weight: bold;
+}
