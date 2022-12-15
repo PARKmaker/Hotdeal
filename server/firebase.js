@@ -4,13 +4,13 @@ import { initializeApp } from "firebase/app";
 import { collection, getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-	apiKey: process.env.HOTDEALVIEW_apiKey,
-	authDomain: process.env.HOTDEALVIEW_authDomain,
-	projectId: process.env.HOTDEALVIEW_projectId,
-	storageBucket: process.env.HOTDEALVIEW_storageBucket,
-	messagingSenderId: process.env.HOTDEALVIEW_messagingSenderId,
-	appId: process.env.HOTDEALVIEW_appId,
-	measurementId: process.env.HOTDEALVIEW_measurementId,
+  apiKey: process.env.apiKey,
+  authDomain: process.env.authDomain,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
+  measurementId: process.env.measurementId,
 };
 
 // Initialize Firebase

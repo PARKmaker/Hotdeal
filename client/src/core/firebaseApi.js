@@ -1,23 +1,26 @@
 import { initializeApp } from "firebase/app";
 import { getDocs, collection, getFirestore } from "firebase/firestore";
 
+// import path from "path";
+// import dotenv from "dotenv";
+
+// dotenv.config({ path: path.join(__dirname, "path/to/.env") });
+
 const firebaseConfig = {
-	apiKey: "AIzaSyCPdRf6qXBfGIOfi_IbBmSDyWX9Frm5fdQ",
-	authDomain: "hotdeal-af9a2.firebaseapp.com",
-	projectId: "hotdeal-af9a2",
-	storageBucket: "hotdeal-af9a2.appspot.com",
-	messagingSenderId: "78342125829",
-	appId: "1:78342125829:web:6340ebd84ee116055adf6c",
-	measurementId: "G-XLTYLE8RH1",
+  apiKey: process.env.apiKey,
+  authDomain: process.env.authDomain,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
+  measurementId: process.env.measurementId,
 };
 
 function getDate() {
-	const today = new Date();
-	const todayId = `${today.getFullYear()}${
-		today.getMonth() + 1
-	}${today.getDate()}${today.getDay()}`;
+  const today = new Date();
+  const todayId = `${today.getFullYear()}${today.getMonth() + 1}${today.getDate()}${today.getDay()}`;
 
-	return todayId;
+  return todayId;
 }
 
 const app = initializeApp(firebaseConfig);
@@ -28,7 +31,7 @@ const docSnap = await getDocs(docRef);
 let data = [];
 
 docSnap.forEach((doc) => {
-	data.push(doc.data().data);
+  data.push(doc.data().data);
 });
 
 // async function getData() {

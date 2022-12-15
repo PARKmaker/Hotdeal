@@ -1,0 +1,15 @@
+{
+  ".inner": {
+    "a": {
+      "img.thumb": "이미지",
+      "span.title": "제목"
+    },
+    "div.info": {
+      "sale": "세일퍼센트, 있을수도",
+      "price, price-rental": "할인가격/원가격, 월"
+    },
+    "span.option": {
+      "buy": "구매갯수"
+    }
+  }
+}
